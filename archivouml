@@ -15,4 +15,18 @@
                                                      |   |        
                                                      |   |        
                                                      |   |        
-+------------------+         *          1           +-----------------
+
+                                    *|   
+                                     |
+                                     |
++------------------+        1          *         +-----------------+
+|     Cuenta      |-----------------------------|    Movimiento    |
++-----------------+                              +-----------------+
+| - codigo: String|                              | - tipo: String   |
+| - saldo: Number |                              | - monto: Number  |
+| - clienteId: String                            | - fecha: Date    |
++-----------------+                              | - cuentaCodigo: String |
+| + depositar()   |                              +-----------------+
+| + retirar()     |                              | + registrarMovimiento() |
+| + consultarSaldo() |                           +-----------------+
++-----------------+ 
