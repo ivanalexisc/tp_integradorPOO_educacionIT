@@ -1,0 +1,18 @@
++------------------+        1          *         +-----------------+
+|     Cliente      |-----------------------------|     Cuenta      |
++------------------+                             +-----------------+
+| - id: String     |                             | - codigo: String|
+| - nombre: String |                             | - saldo: Number |
+| - apellido: String|                            | - clienteId: String |
+| - dni: String    |                             +-----------------+
+| - email: String  |                                 |   |       
+| - password: String|                                |   |        
++------------------+                                 |   |      
+| + modificarDatos()|                                |   |        
+| + eliminarCliente()|                               |   |        
++------------------+                                 |   |        
+                                                     |   |        
+                                                     |   |        
+                                                     |   |        
+                                                     |   |        
++------------------+         *          1           +-----------------
