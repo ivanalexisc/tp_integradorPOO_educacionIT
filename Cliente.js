@@ -1,5 +1,6 @@
-class Cliente{
-    constructor(id, nombre, apellido, dni, email, password){
+// cliente.js
+class Cliente {
+    constructor(id, nombre, apellido, dni, email, password) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -8,14 +9,13 @@ class Cliente{
         this.password = password;
     }
 
-    modificarDatos(nuevosDatos){
-        this.nombre = nuevosDatos.nombre || this.nombre;
-        this.apellido = nuevosDatos.apellido || this.apellido;
-        this.dni = nuevosDatos.dni || this.dni;
-        this.email = nuevosDatos.email || this.email;
+    actualizarNombre(nombre) {
+        this.nombre = nombre;
     }
-    eliminarCliente() {
-        console.log(`Cliente ${this.id} eliminado.`);
-      }
+
+    actualizarApellido(apellido) {
+        this.apellido = apellido;
+    }
 }
+
 export default Cliente;
